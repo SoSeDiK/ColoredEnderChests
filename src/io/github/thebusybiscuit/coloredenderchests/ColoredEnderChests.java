@@ -75,37 +75,37 @@ public class ColoredEnderChests extends JavaPlugin {
 
 		if (cfg.getBoolean("options.auto-update")) updater.start();
 		
-		Research r = new Research(2610, "Colored Ender Chests", 20);
-		Research r2 = new Research(2611, "Big Colored Ender Chests", 30);
-		Research r3 = new Research(2612, "Colored Ender Backpacks", 20);
-		Research r4 = new Research(2613, "Big Colored Ender Backpacks", 30);
+		Research r = new Research(2610, "Цветные эндер-сундуки", 20);
+		Research r2 = new Research(2611, "Большие цветные эндер-сундуки", 30);
+		Research r3 = new Research(2612, "Цветные эндер-рюкзаки", 20);
+		Research r4 = new Research(2613, "Большие цветные эндер-рюкзаки", 30);
 		
 		r.register();
 		r2.register();
 		r3.register();
 		r4.register();
 		
-		colors.put(0, "&rWhite");
-		colors.put(1, "&6Orange");
-		colors.put(2, "&dMagenta");
-		colors.put(3, "&bLight Blue");
-		colors.put(4, "&eYellow");
-		colors.put(5, "&aLime");
-		colors.put(6, "&dPink");
-		colors.put(7, "&8Dark Gray");
-		colors.put(8, "&7Light Gray");
-		colors.put(9, "&3Cyan");
-		colors.put(10, "&5Purple");
-		colors.put(11, "&9Blue");
-		colors.put(12, "&6Brown");
-		colors.put(13, "&2Green");
-		colors.put(14, "&4Red");
-		colors.put(15, "&8Black");
+		colors.put(0, "&rБелый");
+		colors.put(1, "&6Оранжевый");
+		colors.put(2, "&dПурпурный");
+		colors.put(3, "&bГолубой");
+		colors.put(4, "&eЖёлтый");
+		colors.put(5, "&aЛаймовый");
+		colors.put(6, "&dРозовый");
+		colors.put(7, "&8Серый");
+		colors.put(8, "&7Светло-серый");
+		colors.put(9, "&3Бирюзовый");
+		colors.put(10, "&5Фиолетовый");
+		colors.put(11, "&9Синий");
+		colors.put(12, "&6Коричневый");
+		colors.put(13, "&2Зелёный");
+		colors.put(14, "&4Красный");
+		colors.put(15, "&8Чёрный");
 		
-		category = new Category(new CustomItem(Material.ENDER_CHEST, "&5Colored Ender Chests", "", "&a> Click to open"), 2);
+		category = new Category(new CustomItem(Material.ENDER_CHEST, "&5Цветные эндер-сундуки", "", "&a> Нажмите, чтобы открыть"), 2);
 		
 		try {
-			category2 = new Category(new CustomItem(CustomSkull.getItem("eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMmEzYjM0ODYyYjlhZmI2M2NmOGQ1Nzc5OTY2ZDNmYmE3MGFmODJiMDRlODNmM2VhZjY0NDlhZWJhIn19fQ=="), "&5Colored Ender Backpacks", "", "&a> Click to open"), 2);
+			category2 = new Category(new CustomItem(CustomSkull.getItem("eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMmEzYjM0ODYyYjlhZmI2M2NmOGQ1Nzc5OTY2ZDNmYmE3MGFmODJiMDRlODNmM2VhZjY0NDlhZWJhIn19fQ=="), "&5Цветные эндер-рюкзаки", "", "&a> Нажмите, чтобы открыть"), 2);
 		} catch (Exception e) {
 			e.printStackTrace();
 		}

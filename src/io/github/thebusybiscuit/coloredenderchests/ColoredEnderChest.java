@@ -24,7 +24,7 @@ public class ColoredEnderChest extends SlimefunItem {
 
 	public ColoredEnderChest(ColoredEnderChests plugin, int size, int c1, int c2, int c3) {
 		super(plugin.category, 
-			new CustomItem(Material.ENDER_CHEST, "&eColored Ender Chest &7(" + (size == 27 ? "Small": "Big") + ")", "", "&7Size: &e" + size, "", "&7- " + plugin.colors.get(c1), "&7- " + plugin.colors.get(c2), "&7- " + plugin.colors.get(c3)), 
+			new CustomItem(Material.ENDER_CHEST, "&eЦветной эндер-сундук &7(" + (size == 27 ? "маленький": "большой") + ")", "", "&7Размер: &e" + size, "", "&7- " + plugin.colors.get(c1), "&7- " + plugin.colors.get(c2), "&7- " + plugin.colors.get(c3)),
 			"COLORED_ENDER_CHEST_" + (size == 27 ? "SMALL": "BIG") + "_" + c1 + "_" + c2 + "_" + c3, 
 			RecipeType.ANCIENT_ALTAR,
 			(size == 27) ?
@@ -79,7 +79,7 @@ public class ColoredEnderChest extends SlimefunItem {
 			}
 		});
 		
-		new BlockMenuPreset(getID(), "&eEnder Chest", true) {
+		new BlockMenuPreset(getID(), "&eЭндер-сундук", true) {
 			
 			@Override
 			public void newInstance(BlockMenu menu, Block b) {
